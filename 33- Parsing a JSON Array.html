@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Parsing a JSON array</h2>
+<p>Data written as an JSON array will be parsed into a js array</p>
+<p id="demo"></p>
+<script>
+//create an object: let car or const car
+const car = '["HYUNDAI","BMW","AUDI","MARUTI"]';
+const myarr= JSON.parse(car)
+//display some data from the object
+document.getElementById("demo").innerHTML = "The car type is "+myarr[0];
+</script>
+</body>
+</html>
