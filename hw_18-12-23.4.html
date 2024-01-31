@@ -1,0 +1,430 @@
+<!--Adding of two numbers in js, Event Handling and Functions-->
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p>
+    <h3>List of contents: </h3>
+    <ul>
+        <li><a href=#p1> Addition </a></li>
+        <li><a href=#p1> Subtraction </a></li>
+        <li><a href=#p1> Multiplication </a></li>
+        <li><a href=#p1> Division </a></li>
+        <li><a href=#p2> Reverse the String </a></li>
+        <li><a href=#p3> Palindrome </a></li>
+        <li><a href=#p4> Sum of the digits </a></li>
+        <li><a href=#p5> Prime Number </a></li>
+        <li><a href=#p6> Factorial of a number </a></li>
+        <li><a href=#p7> Armstrong Number </a></li>
+        <li><a href=#p8> Leap Year </a></li>
+        <li><a href=#p9> Greatest of 3 numbers </a></li>
+        <li><a href=#p10> Even/Odd </a></li>
+        <li><a href=#p11> Perfect Number </a></li>
+        <li><a href=#p12> Vowels in a string </a></li>
+        <li><a href=#p13> Length of a String </a></li>
+        <li><a href=#p14> Merging of two strings (alphabetically) </a></li>
+        
+
+        
+    </ul>
+</p>
+<p id="p1">
+    First number:<br>
+    <input type="text" id="firstname" value="2">
+<br> 
+Last number:<br>
+<input type="text" id="lastname" value="3">
+<br><br>
+
+<input type="submit" id="button1" onclick="addition(4,3)" value="Addition">
+<input type="submit" id="button2" onclick="subtraction(4,3)" value="Subtraction">
+<input type="submit" id="button3" onclick="multiplication(4,3)" value="Multiplication">
+<input type="submit" id="button4" onclick="division(4,3)" value="Division">
+
+<p id="demo">Result</p>
+</p>
+<br><br>
+
+<p id="p2">
+<b><u>Reverse of a string</u></b><br>
+Enter a String to be reversed:<br>
+<input type="text" id="stringrev" value="hello">
+<br>
+<input type="submit" id="button5" onclick="reversestring()" value="reversestring">
+<br>
+Reversed String: <br>
+<p id="demo1"> Result </p>
+</p>
+
+<br><br>
+<p id="p3">
+<b><u>Palindrome</u></b><br>
+Enter a String to be checked if it is a palindrome or not:<br>
+<input type="text" id="palindrome" value="radar">
+<br>
+<input type="submit" id="button6" onclick="palindrome()" value="Result">
+<br>
+is it a palindrome? : 
+<p id="demo2"> Result </p></p>
+<br><br>
+
+<b><u>Sum of digits</u></b><br>
+Enter a Number: <br>
+<input type="text" id="sumofdigits" value="123">
+<br>
+<input type="submit" id="button7" onclick="SumOfDigits()" value="sumofdigits">
+<br>
+Sum of the digits of this number =   
+<p id="demo3"> Result </p>
+<br><br>
+
+<b><u>Prime number</u></b><br>
+Enter a Number: <br>
+<input type="text" id="prime" value="5">
+<br>
+<input type="submit" id="button8" onclick="prime()" value="prime">
+<br>
+Is the number prime? =  
+<p id="demo4"> Result </p>
+<br><br>
+
+<b><u>Factorial</u></b><br>
+Enter a Number: <br>
+<input type="text" id="factorial" value="5">
+<br>
+<input type="submit" id="button8" onclick="Fact()" value="fact">
+<br>
+Factorial of this number =  
+<p id="demo5"> Result </p>
+<br><br>
+
+<b><u>Armstrong number</u></b><br>
+Enter a Number: <br>
+<input type="text" id="arm" value="1634">
+<br>
+<input type="submit" id="button9" onclick="ArmstrongNumber()" value="armstrongnumber">
+<br>
+Is the number an Armstrong number? <br>  
+<p id="demo6"> Result </p>
+<br><br>
+
+<b><u>Leap Year</u></b><br>
+Enter a year: <br>
+<input type="text" id="leap" value="2004">
+<br>
+<input type="submit" id="button10" onclick="LeapYear()" value="leapyear">
+<br>
+Is the year a leap year?<br>  
+<p id="demo7"> Result </p>
+<br><br>
+
+<b><u>Greatest of three numbers</u></b><br>
+Enter three numbers: <br>
+<input type="text" id="num1" value="1">
+<br>
+<input type="text" id="num2" value="2">
+<br>
+<input type="text" id="num3" value="3">
+<br>
+<input type="submit" id="button11" onclick="maxx()" value="max">
+<br>
+Greatest of the three numbers =  
+<p id="demo8"> Result </p>
+<br><br>
+
+<b><u>Even or Odd</u></b><br>
+Enter a number: <br>
+<input type="text" id="evod" value="4">
+<br>
+<input type="submit" id="button12" onclick="EvenOdd()" value="evenodd">
+<br>
+The number is:   
+<p id="demo9"> Result </p>
+<br><br>
+
+<b><u>Perfect Number</u></b><br>
+Enter a number: <br>
+<input type="text" id="perfect" value="6">
+<br>
+<input type="submit" id="button13" onclick="PerfectNum()" value="perfectnum">
+<br>
+Is the number a perfect number?<br>  
+<p id="demo10"> Result </p>
+<br><br>
+
+<b><u>Vowels in a string</u></b><br>
+Enter a string : <br>
+<input type="text" id="vowel" value="hello">
+<br>
+<input type="submit" id="button14" onclick="vowels()" value="vowels">
+<br>
+Vowels in the string: <br>  
+<p id="demo11"> Result </p>
+<br><br>
+
+<b><u>Length of a String</u></b><br>
+Enter a string: <br>
+<input type="text" id="length" value="hello world">
+<br>
+<input type="submit" id="button15" onclick="Length()" value="length">
+<br>
+Length of the string =   
+<p id="demo12"> Result </p>
+<br><br>
+
+<b><u>Merging of two strings (alphabetically)</u></b><br>
+Enter two strings: <br>
+<input type="text" id="string1" value="merge">
+<br>
+<input type="text" id="string2" value="string">
+<br>
+<input type="submit" id="button16" onclick="MergeandSort()" value="mergeandsort">
+<br>
+Merged string =   
+<p id="demo13"> Result </p>
+<br><br>
+<script>
+
+
+    function addition(p1,p2){
+        //const num1=parseInt(prompt('Enter the first number')); //prompt mein use '' , not ""
+        var num1=parseInt(document.getElementById("firstname").value);
+        //const num2=parseInt(prompt('Enter the second number'));
+        var num2=parseInt(document.getElementById("lastname").value);
+
+    //add two numbers
+    const sum=num1+num2;
+    document.getElementById("demo").innerHTML=sum; //action after onclick
+
+    }
+
+    function division(p1,p2){
+        //const num1=parseInt(prompt('Enter the first number'));
+        var num1=parseInt(document.getElementById("firstname").value);
+        //const num2=parseInt(prompt('Enter the second number'));
+        var num2=parseInt(document.getElementById("lastname").value);
+
+    //add two numbers
+    const div=num1/num2;
+    document.getElementById("demo").innerHTML=div; //action after onclick
+
+    }
+
+    function subtraction(p1,p2){
+        //const num1=parseInt(prompt('Enter the first number'));
+        var num1=parseInt(document.getElementById("firstname").value);
+        //const num2=parseInt(prompt('Enter the second number'));
+        var num2=parseInt(document.getElementById("lastname").value);
+
+    //add two numbers
+    const minus=num1-num2;
+    document.getElementById("demo").innerHTML=minus; //action after onclick
+
+    }
+
+    function multiplication(p1,p2){
+        //const num1=parseInt(prompt('Enter the first number'));
+        var num1=parseInt(document.getElementById("firstname").value);
+        //const num2=parseInt(prompt('Enter the second number'));
+        var num2=parseInt(document.getElementById("lastname").value);
+
+    //add two numbers
+    const prod=num1*num2;
+    document.getElementById("demo").innerHTML=prod; //action after onclick
+
+    }
+
+    function reversestring(){
+        var new_string="";
+        var prev_string = document.getElementById("stringrev").value;
+            for(let i=prev_string.length-1; i>=0; i--){
+                new_string+=prev_string[i];
+            }
+        document.getElementById("demo1").innerHTML = new_string;
+    }
+
+    function palindrome(){
+        var palind = document.getElementById("palindrome").value;
+        var palind_check="";
+        for(let i=palind.length-1; i>=0; i--){
+            palind_check= palind_check + palind[i];
+        }
+
+        if(palind_check==palind){
+            document.getElementById("demo2").innerHTML = "Yes";
+        }
+        else{
+            document.getElementById("demo2").innerHTML = "No";
+         
+
+        }
+    }
+
+    function SumOfDigits(){
+        var summ = 0;
+        var remainder;
+        var sod=parseInt(document.getElementById("sumofdigits").value);
+        
+        for(let temp = sod; temp!=0; temp=parseInt(temp/10)){
+            remainder = temp%10;
+            summ = summ + remainder;
+        }
+        
+        document.getElementById("demo3").innerHTML = summ;
+    }
+
+    function prime(){
+        var pri = parseInt(document.getElementById("prime").value);
+        var flag=0 ;
+        for(let i=2; i < pri; i++){
+            if(pri%i==0){
+                flag++ ;
+                
+            }
+        }
+            if(flag>0){
+                document.getElementById("demo4").innerHTML = "No";
+            }
+            else{
+                document.getElementById("demo4").innerHTML = "Yes";
+            }
+        
+
+    }
+
+    function Fact(){
+        var f = parseInt(document.getElementById("factorial").value);
+        var prod2 = 1;
+        for(let i=f; i>0; i--){
+            prod2 = prod2*i;
+        }
+        document.getElementById("demo5").innerHTML = prod2;
+    }
+
+    function ArmstrongNumber(){
+        var strong = parseInt(document.getElementById("arm").value);
+        var temp2;
+        var remainder;
+        var sum3 = 0;
+        var nod = 0;
+        for(temp2 = strong ; temp2!=0; nod++){
+            temp2=parseInt(temp2/10);
+        }
+
+        for(temp2 = strong ; temp2!=0; temp2=parseInt(temp2/10)){
+            remainder = temp2%10;
+            sum3 = sum3 + Math.pow(remainder, nod);
+        }
+        if(sum3==strong){
+            document.getElementById("demo6").innerHTML = "Yes";
+        }
+        else{
+            document.getElementById("demo6").innerHTML = "No";
+        }
+    }
+
+    function LeapYear(){
+        var year = parseInt(document.getElementById("leap").value);
+        if(year%400==0){
+            document.getElementById("demo7").innerHTML="Yes";
+        }
+        else if(year%100==0){
+            document.getElementById("demo7").innerHTML="No";
+        }
+        else if(year%4==0){
+            document.getElementById("demo7").innerHTML="Yes";
+        }
+        else{
+            document.getElementById("demo7").innerHTML="No";
+        }
+    }
+
+    function maxx(){
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var n3 = parseInt(document.getElementById("num3").value);
+
+        if((n1>=n2)&&(n1>=n3)){
+            document.getElementById("demo8").innerHTML = n1;
+        }
+        else if((n2>=n1)&&(n2>=n3)){
+            document.getElementById("demo8").innerHTML = n2;
+        }
+        else
+        document.getElementById("demo8").innerHTML = n3;
+        
+    }
+    function EvenOdd(){
+        var eo = parseInt(document.getElementById("evod").value);
+        if(eo%2==0){
+            document.getElementById("demo9").innerHTML = "Even";
+        }
+        else{
+            document.getElementById("demo9").innerHTML = "Odd";
+    
+        }
+    }
+
+    function PerfectNum(){
+        var perf = parseInt(document.getElementById("perfect").value);
+        var sum5=0;
+
+        for(let i=1; i<perf; i++){
+            if(perf%i==0){
+                sum5 = sum5 + i;
+            }
+            if(sum5 == perf){
+                document.getElementById("demo10").innerHTML = "Yes";
+            }
+            else{
+                document.getElementById("demo10").innerHTML = "No";
+            
+            }
+        }
+    }
+    function vowels(){
+        var key = document.getElementById("vowel").value;
+        var lock = "";
+
+        for(let i of key){
+            if((i=="a")||(i=="e")||(i=="i")||(i=="o")||(i=="u")){
+                lock=lock + i +" ";
+            }
+        }
+        document.getElementById("demo11").innerHTML = lock;
+            
+
+    }
+
+    function Length(){
+        var nlength = document.getElementById("length").value;
+        var nlen=0;
+        for(let i of nlength){
+            if(i!=" "){
+                nlen++;
+            }
+        }
+        document.getElementById("demo12").innerHTML = nlen;
+            
+
+
+    }
+
+    function MergeandSort(){
+        var m1 = document.getElementById("string1").value;
+        var m2 = document.getElementById("string2").value;
+
+        var m3 = m1+m2;
+        var m4 = m3.split("").sort(); // split() function converted string to an array, sort() is used with arrays.
+        var m5 = "";
+        for(let i of m4){
+            m5 = m5 + i;
+        }
+        document.getElementById("demo13").innerHTML = m5;
+           
+    }
+</script>
+</body>
+</html>
